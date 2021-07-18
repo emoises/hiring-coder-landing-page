@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/blcakfridays.svg">
+  <img src="./assets/blcakfridays.svg" style="width:50px,heigth:50px" >
   <br/>
   <h1 align="center">Desafio Hiring Coders - Landing page</h1>
 </p>
