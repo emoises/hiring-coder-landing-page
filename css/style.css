@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    border: 0;
+    font-weight: 100;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 80px;
+    position: fixed;
+}
+li {
+    list-style: none;
+}
+
+[sections-one]{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/wall-bricks.png);
+}
+
+[background-filter] {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient( rgba(13,1,37,.7), rgba(0,0,0,.98));
+    display: flex;
+    flex-direction: column;
+}
+
+.background-filter-one{
+    display: flex;
+    flex-direction: columm;
+    align-items: stretch;
+}
+.countdown{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 280px, 400px )); 
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+[time-container]{
+    width: 110px;
+    height: 90px;
+    background: #f2f5f5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column
+}
+
+
+
+.countdown [time-container] {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    padding: 1rem;
+    color: #f2f5f5;
+    background: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0, .4);
+    text-align: center;
+}
+
+.countdown [time-container] span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+#img-container{
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 2px 2px rgba(0,0,0, 0);
+}
+
+.backfriday-img{
+    width: 240%;
+    height: auto;
+    margin-right: -40%;
+    margin-top: 10%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.sales-container{
+    top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-cards{
+    width: 220px;
+    height: 220px;
+    margin:  0 10px;
+    border-radius: 10px;
+    background: #505050;    
+    /* background-image: url(../assets/1.png);  */
+    /* background-attachment: fixed    ; */
+}
+
+.product-cards img{
+    border-radius: 10px;
+    height: 100%;
+    width: auto;
+}
+
+.text-ad{
+    
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font: 0.8rem  sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f2f5f5
+}
+
+.text-ad span{
+    font-weight: bold;
+    color: yellowgreen
+}
+
+.text-ad a{
+    text-decoration: none;
+    font: 400 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #fff5ff;
+    font-weight: bold;  
+}
+[sections-two]{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/white-wall-brick.png);
+}
+[sections-two] img{
+    width: 20%;
+    position: absolute;
+    left: 0;
+}
+[sections-two] #wall-decoration{
+    width: 40%;
+    height: auto;
+    position: relative;
+
+    right: 0;
+    bottom: 40px;
+   
+}
+.container-form{
+    height:auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+.h2-container{
+    background: rgba(255, 255, 255, 0.7);
+    margin: 25px 0;
+    padding: 0 40px;
+    border-radius: 15px;
+}
+[sections-two] h2{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+[sections-two] .container-form .form{
+    width:50%;
+    /* height: 20px; */
+    height: 50px;
+    position: relative;
+    /* background: #d9d9d9; */
+    overflow: hidden;
+}
+
+[sections-two] .container-form .form .input-name{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* color: #00e055 */
+    padding-top: 14px;
+    margin-left: 2%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+[sections-two] .container-form .form .input-name:first-child{
+    left: 15px;
+}
+
+.input-background{
+    /* background: red; */
+    background: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px ;
+    /* margin: 0 10px; */
+}
+.input-button{
+    margin: 0 10px;
+    border-radius: 10px;
+}
+[sections-two] .container-form .form label{
+   position: absolute;
+   bottom: 0;
+   width: 96%;
+   height: 100%;
+   left: 2%;
+   pointer-events: none;
+   border-bottom: 2px solid #d2d5d5;
+   z-index: 0;
+}
+[sections-two] .container-form .form label::after{
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   left: -2%;
+   border-bottom: 4px solid #5fa8d3;
+   transform: translateX(-100%);
+   transition: transform 0.3s ease;
+}
+[sections-two] .container-form .content-name{
+    position: absolute;
+    bottom: 5px;
+    transition: all 0.3s ease;
+}
+.container-form .form .input-name:focus + .label-name .content-name,
+.container-form .form .input-name:valid + .label-name .content-name{
+    transform: translateY(-140%);
+    font-size: .8rem;
+    font-weight: bold;
+    color: #5fa8d3;
+    border: none;
+}   
+.container-form .form .input-name:focus + .label-name::after,
+.container-form .form .input-name:valid + .label-name::after {
+    transform: translateX(2%);
+}   
+#input-button{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #f2f5f5
+}
+/* #input-button:hover{
+    background: #b2b5b5
+} */
+#input-button span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: clicked 1s linear infinite;
+}
+@keyframes clicked{
+    0%{
+        width:0px;
+        height:0px;
+    }
+    100%{
+        width:50px;
+        height:50px;
+    }
+}
+.clicked{
+    animation: input-click .2s;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+@keyframes modal{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px , 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0 , 0)
+    }
+}
+.modal.show{
+    display: flex;
+}
+.show .modal-text{
+    animation: modal .8s;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+.modal #modal-front{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1e1e1e;
+    opacity: 0;
+}
+.modal-text{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+footer{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background: #f2f5f5
+}
+footer .icons-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 200px;height: auto;
+}
+footer a{
+    position: relative;
+    width: 50pxpx;
+    height: 50px;
+    
+}
+
+footer a img{
+    margin: 20px 20px;
+    width: 40px;
+    height: 40px;
+    background: #f2f5f5;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(0,0,0,.8)
+}

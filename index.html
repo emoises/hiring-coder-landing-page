@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Blackfriday</title>
+</head>
+<body>
+    <nav>
+    </nav>
+    <section sections-one >
+        <div background-filter id="background-filter-one" >
+                <div class="countdown-container">
+                    <div class="countdown">
+                        <div time-container id='img-container' >
+                            <img id="blackfridayimg" class="backfriday-img" src="/assets/blcakfridays.svg" alt="Friday" >
+                        </div>
+                        <div time-container >
+                            <span data-time></span>
+                            <div>dia(s)</div>
+                        </div>
+                        <div time-container >
+                            <span data-time></span>
+                            <div>hora(s)</div>
+                        </div>
+                        <div time-container >
+                            <span data-time></span>
+                            <div>min.</div>
+                        </div>
+                        <div time-container >
+                            <span data-time></span>
+                            <div>seg.</div>
+                        </div>
+                    </div>
+                </div>
+            <div class="sales-container">
+                <div class="product-cards">
+                    <img src="./assets/eletronicos.png" alt="eletrônicos" srcset="">
+                </div>
+                <div class="product-cards">
+                    <img src="./assets/banho.png" alt="eletrônicos" srcset="">
+                    
+                </div>
+                <div class="product-cards">
+                    <img src="./assets/jardim.png" alt="eletrônicos" srcset="">
+                    
+                </div>
+                <div class="product-cards">
+                    <img src="./assets/utesilios-domesticos.png" alt="eletrônicos" srcset="">
+                    
+                </div>
+                <div class="product-cards">
+                    <img src="./assets/vestuario.png" alt="eletrônicos" srcset="">
+
+                </div>
+            </div>
+            <h2 class="text-ad">Vem ai o maior saldão on-line do Brasil. </h2>
+        </div>
+    </section>
+    <section sections-two >
+        <div class="h2-container">
+            <h2>Se inscreva e não perca esta oportunidade de renovar sua casa.</h2>
+        </div>
+        <form id="submit-form" class="container-form">
+            <div class="form">
+                <div class="input-background">
+                    <input id="input-name" class="input-name" type="text" name="name" autocomplete="off" required>
+                    <label for="name" class="label-name">
+                        <span class="content-name">Name</span>
+                    </label>
+                </div>
+            </div>
+            <div style="width: 10px;"></div>
+            <div class="form">
+                <div class="input-background">
+                    <input id="input-email" class="input-name" type="email" name="email" autocomplete="off" required>
+                    <label for="email" class="label-name">
+                        <span class="content-name">E-mail</span>
+                    </label>
+                </div>
+            </div>
+ 
+            <button id="input-button" type="submit" value="Cadastre-se">Cadastrar</button>
+        </form>
+
+        
+    </section>
+    <div id="modal" class="modal">
+        <div id="modal-text" class="modal-text">${msg}</div>
+        <div id="modal-front"></div>
+    </div>
+    <footer>
+        <h3>Todos os direitos reservados</h3>
+        <div class="icons-container">
+            
+            <a href="https://github.com/emoises" class="github">
+                <img src="/assets/github-icon.png" alt="github" srcset="">    
+            </a>
+            <a href="https://www.linkedin.com/in/eduardomoises" class="linkedin">
+                <img src="/assets/linkedin-icon.png" alt="linkedin" srcset="">
+            </a>
+        </div>
+    </footer>
+</body>
+<script type="module" src="./js/scripts.js"></script>
+</html>

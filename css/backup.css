@@ -1,0 +1,76 @@
+ * {
+    margin: 0;
+    border: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+li {
+    list-style-type: none
+}
+[sections-one]{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/wall-bricks.png);
+}
+
+[sections-two]{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/wall-bricks.png);
+}
+
+[background-filter] {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient( rgba(13,1,37,.8), rgba(13,1,37,.9));
+    display: flex;
+    flex-direction: row;
+}
+.img-container {
+    width: 20%;
+    height: 200px;
+}
+
+[sections-one] img {
+    position: absolute;
+    left: -10px;
+    width: 30%;
+    height: auto;
+}
+
+.countdown-container{
+    display: flex;
+}
+
+[sections-two] img {
+    position: absolute;
+}
+.countdown{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 280px, 400px )); 
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.countdown li {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    padding: 1rem;
+    color: #09e;
+    background: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0, .4);
+    text-align: center;
+}
+
+.countdown li span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 10rem;
+}
