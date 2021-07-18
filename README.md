@@ -4,7 +4,7 @@
   <h1 align="center">Desafio Hiring Coders - Landing page</h1>
 </p>
 
-## Descrioção
+## Descrição
 Projeto de uma landing page desenvolvida com HTML, CSS e Javacscript.
 Compostas por duas seções e um footer
 
@@ -14,7 +14,7 @@ Composta por uma animação em javascript localizada em script.js com frequênci
 Contador com deadline em 18/07/2021 às 11:59. Desenvolvido em countdown.js.
 Background composto por uma imagem de tijolos brancos com uma 'div' com opacidade variável e gradiente de cores. 
 ## Seção 2
-Alterei o background adicionando duas imagens e utilizei o figma[www.figma.com] para altera-la.
+Alterei o background adicionando duas imagens e utilizei o [figma](www.figma.com) para altera-la.
 Dois inputs e um button com animação em css e javascript. 
 
 ### footer
